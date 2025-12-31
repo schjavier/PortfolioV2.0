@@ -1,0 +1,13 @@
+<div class="git-wrapper">
+  <div class="graph-container" #graphContainer></div>
+
+  @if(tooltipVisible()){
+    <div class="custom-tooltip"
+         [style.top.px]="tooltipY()"
+         [style.left.px]="tooltipX()">
+      {{tooltipText()}}
+    </div>
+  }
+
+
+</div>

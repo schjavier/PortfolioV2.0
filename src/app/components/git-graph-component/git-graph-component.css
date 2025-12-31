@@ -1,0 +1,17 @@
+.custom-tooltip {
+  position: fixed;
+  background-color: var(--acent-color);
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  pointer-events: none;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+  transition: opacity 0.2s;
+  font-family: var(--font), monospace;
+}
+
+.git-wrapper{
+  width: 80%;
+}
+

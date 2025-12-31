@@ -1,0 +1,30 @@
+header{
+  align-self: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: row;
+  gap: 1rem;
+  border-bottom: 1px solid var(--acent-color);
+}
+
+
+h1{
+  font-family: var(--font), monospace;
+  color: var(--tertiary-color);
+  font-size: 2rem;
+
+}
+
+small{
+  font-family: var(--font), monospace;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+a{
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-family: var(--font), monospace;
+}

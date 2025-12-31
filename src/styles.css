@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  --background-color: #170b19;
+  --primary-color: #fa448c;
+  --secondary-color: #fec859;
+  --tertiary-color: #43b5a0;
+  --acent-color: #491d88;
+  --font: "JetBrains Mono", monospace;
+}
+
+
+html {
+  background-color: var(--background-color);
+}
+
+body {
+  min-height: 100dvh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
