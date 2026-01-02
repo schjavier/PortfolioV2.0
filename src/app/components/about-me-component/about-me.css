@@ -1,0 +1,51 @@
+.about-me-section{
+  margin-top: 50px;
+  height: 100dvh;
+  width: 80vw;
+}
+
+img {
+  float: left;
+  margin: 10px;
+  shape-outside: circle();
+}
+
+h3{
+  text-align: center;
+  font-family: "JetBrains Mono", monospace;
+  color: var(--secondary-color);
+}
+
+p{
+  text-align: justify;
+  font-family: "JetBrains Mono", monospace;
+  color: var(--primary-color);
+}
+
+p:nth-child(even){
+  color: var(--tertiary-color);
+}
+
+p.back-link{
+  text-align: center;
+  color: var(--secondary-color);
+  margin-top: 50px;
+}
+
+a{
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover{
+  color: var(--secondary-color);
+}
+
+strong{
+  color: var(--secondary-color);
+}
+
+i{
+  color: var(--secondary-color);
+}
+
