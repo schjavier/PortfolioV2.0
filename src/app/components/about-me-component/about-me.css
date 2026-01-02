@@ -26,3 +26,26 @@ p:nth-child(even){
   color: var(--tertiary-color);
 }
 
+p.back-link{
+  text-align: center;
+  color: var(--secondary-color);
+  margin-top: 50px;
+}
+
+a{
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover{
+  color: var(--secondary-color);
+}
+
+strong{
+  color: var(--secondary-color);
+}
+
+i{
+  color: var(--secondary-color);
+}
+
