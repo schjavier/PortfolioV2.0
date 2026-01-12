@@ -111,7 +111,7 @@ export class GitGraphComponent{
 
     projectsBranch.commit({
       subject: "add: 'Brotes'",
-      onClick: () => this.router.navigate(['/proyectos']),
+      onClick: () => this.router.navigate(['/projects/brotes']),
       onMouseOver: (commit) => {
         this.tooltipText.set(commit.subject);
         this.tooltipVisible.set(true);

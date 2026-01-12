@@ -1,3 +1,10 @@
+.home {
+  /*height: fit-content;*/
+  /*width: 60vw;*/
+  display: flex;
+  flex-direction: column;
+}
+
 h3{
   font-family: "JetBrains Mono", monospace;
   font-size: 16px;
