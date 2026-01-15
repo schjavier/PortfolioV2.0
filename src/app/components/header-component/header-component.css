@@ -1,14 +1,15 @@
 header{
-  align-self: center;
-  width: 100%;
+  width: 80%;
+  border-bottom: 1px solid var(--acent-color);
+}
+
+nav{
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   flex-direction: row;
   gap: 1rem;
-  border-bottom: 1px solid var(--acent-color);
 }
-
 
 h1{
   font-family: var(--font), monospace;

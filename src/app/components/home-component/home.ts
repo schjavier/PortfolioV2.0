@@ -1,12 +1,10 @@
 import {Component} from '@angular/core';
-import {GitGraphComponent} from '../git-graph-component/git-graph-component';
-import {HeaderComponent} from '../header-component/header-component';
+import {MermaidGitGraphComponent} from '../mermaid-git-graph-component/mermaid-git-graph-component';
 
 @Component({
   selector: 'app-home',
   imports: [
-    GitGraphComponent,
-    HeaderComponent
+    MermaidGitGraphComponent
   ],
   templateUrl: './home.html',
   styleUrl: './home.css',

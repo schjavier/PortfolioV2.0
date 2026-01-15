@@ -1,0 +1,10 @@
+.projects{
+  /*height: 100dvh;*/
+  /*width: 60vw;*/
+}
+
+h2{
+  text-align: center;
+  font-family: var(--font), monospace;
+  color: var(--primary-color);
+}
