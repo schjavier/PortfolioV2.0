@@ -1,10 +1,18 @@
 <h2> Proyectos </h2>
 
 <section class="projects">
-  @if(projectName() === 'brotes'){
-    <app-brotes/>
-  } @else {
-    <p>todavia no hay nada</p>
-  }
+<!--  @if(projectName() === 'Brotes'){-->
+<!--    <app-brotes/>-->
+<!--  } @else {-->
+<!--    <p>todavia no hay nada</p>-->
+<!--  }-->
 
+  @switch (projectName()){
+    @case ('Brotes'){
+      <app-brotes/>
+    }
+    @case ('EmailSender'){
+      <app-emailsender/>
+    }
+  }
 </section>
