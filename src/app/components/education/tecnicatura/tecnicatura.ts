@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { LanguageService } from '../../../services/language.service';
 
 @Component({
   selector: 'app-tecnicatura',
@@ -6,4 +7,7 @@ import { Component } from '@angular/core';
   templateUrl: './tecnicatura.html',
   styleUrl: './tecnicatura.css',
 })
-export class TecnicaturaComponent {}
+export class TecnicaturaComponent {
+  languageService = inject(LanguageService);
+  currentTranslations = this.languageService.currentTranslations;
+}

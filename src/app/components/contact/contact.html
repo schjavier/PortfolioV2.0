@@ -1,9 +1,9 @@
 <section class="contact-section">
-  <h2>Contacto</h2>
+  <h2>{{ currentTranslations().contact.title }}</h2>
 
   <form (submit)="sendContact($event)" class="contact-form">
     <div class="form-group">
-      <label for="name">Nombre</label>
+      <label for="name">{{ currentTranslations().contact.nameLabel }}</label>
       <input
         type="text"
         id="name"
@@ -14,7 +14,7 @@
     </div>
 
     <div class="form-group">
-      <label for="email">Email</label>
+      <label for="email">{{ currentTranslations().contact.emailLabel }}</label>
       <input
         type="email"
         id="email"
@@ -23,12 +23,12 @@
         required
       />
       @if (email().length > 0 && !isEmailValid()) {
-        <span class="error-msg">Por favor, introduce un email válido.</span>
+        <span class="error-msg">{{ currentTranslations().contact.emailValidationError }}</span>
       }
     </div>
 
     <div class="form-group">
-      <label for="comment">Mensaje</label>
+      <label for="comment">{{ currentTranslations().contact.messageLabel }}</label>
       <textarea
         id="comment"
         rows="5"
@@ -39,9 +39,11 @@
     </div>
 
     <button type="submit" [disabled]="!isFormValid()" class="submit-btn">
-      Enviar Mensaje
+      {{ currentTranslations().contact.sendButton }}
     </button>
   </form>
 
-  <p class="back-link"><a routerLink="/home">..:: VOLVER ::..</a></p>
+  <p class="back-link">
+    <a routerLink="/home">{{ currentTranslations().contact.backLink }}</a>
+  </p>
 </section>

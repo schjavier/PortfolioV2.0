@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import {NgOptimizedImage} from '@angular/common';
+import { Component, inject } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
+import { LanguageService } from '../../../services/language.service';
 
 @Component({
   selector: 'app-brotes',
@@ -10,8 +11,10 @@ import {NgOptimizedImage} from '@angular/common';
   styleUrl: './brotes.css',
 })
 export class Brotes {
+  languageService = inject(LanguageService);
+  currentTranslations = this.languageService.currentTranslations;
 
-  imgPath: string = 'brotesLogin.png';
-  repoBackPath : string = 'https://github.com/schjavier/BrotesApi' ;
-  repoFrontPath :  string = 'https://github.com/schjavier/BrotesFront' ;
+  imgPath = 'brotesLogin.png';
+  repoBackPath = 'https://github.com/schjavier/BrotesApi';
+  repoFrontPath = 'https://github.com/schjavier/BrotesFront';
 }

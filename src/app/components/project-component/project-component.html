@@ -1,11 +1,6 @@
-<h2> Proyectos </h2>
+<h2> {{ currentTranslations().projects.title }} </h2>
 
 <section class="projects">
-<!--  @if(projectName() === 'Brotes'){-->
-<!--    <app-brotes/>-->
-<!--  } @else {-->
-<!--    <p>todavia no hay nada</p>-->
-<!--  }-->
 
   @switch (projectKey()){
     @case ('brotes'){
@@ -14,7 +9,8 @@
     @case ('emailsender'){
       <app-emailsender/>
     }
+    @default {
+      <p>{{ currentTranslations().projects.notFound }}</p>
+    }
   }
-
-  <p class="back-link"><a routerLink="/home">..:: VOLVER ::..</a></p>
 </section>

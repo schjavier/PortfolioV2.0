@@ -1,5 +1,6 @@
-import { Component, computed, signal } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-contact',
@@ -8,6 +9,9 @@ import { RouterLink } from '@angular/router';
   styleUrl: './contact.css',
 })
 export class ContactComponent {
+  languageService = inject(LanguageService);
+  currentTranslations = this.languageService.currentTranslations;
+
   name = signal('');
   email = signal('');
   comment = signal('');

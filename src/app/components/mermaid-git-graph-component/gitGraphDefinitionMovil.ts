@@ -1,4 +1,4 @@
-export const gitGraphDefinitionMovil:string = `gitGraph TB:
+export const gitGraphDefinitionMovilEs: string = `gitGraph TB:
       commit id: "AboutMe"
     branch educacion
       commit id: "Bootcamps"
@@ -16,4 +16,24 @@ export const gitGraphDefinitionMovil:string = `gitGraph TB:
       commit id: "FullStack Developer"
     checkout main
       commit id: "Contacto"
-      `
+      `;
+
+export const gitGraphDefinitionMovilEn: string = `gitGraph TB:
+      commit id: "AboutMe"
+    branch education
+      commit id: "Bootcamps"
+    checkout main
+    branch projects
+      commit id: "Brotes"
+    checkout projects
+      commit id: "EmailSender"
+    checkout education
+      commit id: "Degree"
+    checkout main
+    branch experience
+      merge education
+      merge projects
+      commit id: "FullStack Developer"
+    checkout main
+      commit id: "Contact"
+      `;

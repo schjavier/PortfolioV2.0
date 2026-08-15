@@ -1,7 +1,11 @@
 <header>
   <nav>
     <h1> Javier Schettini <small>FullStack Developer</small></h1>
-    <a href="/JavierSchettini-Es.pdf" download="JavierSchettini-Es.pdf">Descargar CV</a>
+    <div class="nav-actions">
+      <button (click)="toggleLanguage()" class="lang-btn">{{ languageLabel() }}</button>
+      <a [href]="currentTranslations().header.cvFile" [download]="currentTranslations().header.cvFile">
+        {{ currentTranslations().header.downloadCv }}
+      </a>
+    </div>
   </nav>
-
 </header>
