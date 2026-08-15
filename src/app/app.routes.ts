@@ -3,6 +3,7 @@ import {Home} from './components/home-component/home';
 import {AboutMe} from './components/about-me-component/about-me';
 import {ProjectComponent} from './components/project-component/project-component';
 import {EducationComponent} from './components/education/education';
+import {ContactComponent} from './components/contact/contact';
 
 export const routes: Routes = [
   {
@@ -28,10 +29,11 @@ export const routes: Routes = [
     data: { educationType: 'tecnicatura' }
   },
   {
+    path: 'Contacto',
+    component: ContactComponent
+  },
+  {
     path: ':projectName',
     component: ProjectComponent
   }
-
-
-
 ];
