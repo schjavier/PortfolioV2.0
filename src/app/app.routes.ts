@@ -17,7 +17,7 @@ export const routes: Routes = [
     component: AboutMe
   },
   {
-    path: 'projects/:projectName',
+    path: ':projectName',
     component: ProjectComponent
   }
 

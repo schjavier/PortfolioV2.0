@@ -5,7 +5,7 @@
   --secondary-color: #fec859;
   --tertiary-color: #43b5a0;
   --acent-color: #491d88;
-  --font: "JetBrains Mono", monospace;
+  --font: "JetBrains Mono";
 }
 
 
@@ -14,6 +14,7 @@ html {
 }
 
 body {
+  font-family: var(--font), monospace;
   /*width: 100vw;*/
   /*display: flex;*/
   /*flex-direction: column;*/
