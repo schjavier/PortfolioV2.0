@@ -12,10 +12,9 @@
 }
 
 .contact-form {
-  background-color: #251229;
-  border: 1px solid rgba(254, 200, 89, 0.15);
-  border-radius: 8px;
-  padding: 2rem;
+  border: 2px solid var(--tertiary-color);
+  border-radius: 25px;
+  padding: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   text-align: left;
 }
