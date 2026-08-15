@@ -1,10 +1,36 @@
-.projects{
-  /*height: 100dvh;*/
-  /*width: 60vw;*/
+:host {
+  display: block;
+  width: 100%;
 }
 
-h2{
+.projects {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-bottom: 2rem;
+}
+
+h2 {
   text-align: center;
   font-family: var(--font), monospace;
   color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+}
+
+.back-link {
+  margin-top: 2rem;
+  font-family: var(--font), monospace;
+  text-align: center;
+}
+
+.back-link a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.back-link a:hover {
+  color: var(--secondary-color);
 }

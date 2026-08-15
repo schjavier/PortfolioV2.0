@@ -1,51 +1,59 @@
-.about-me-section{
-  margin-top: 50px;
-  height: 70dvh;
-  width: 80vw;
+:host {
+  display: block;
+  width: 100%;
+}
+
+.about-me-section {
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto 0 auto;
+  min-height: 70dvh;
+  box-sizing: border-box;
 }
 
 img {
   float: left;
-  margin: 10px;
+  margin: 10px 20px 10px 0;
   shape-outside: circle();
 }
 
-h3{
+h3 {
   text-align: center;
   font-family: "JetBrains Mono", monospace;
   color: var(--secondary-color);
 }
 
-p{
+p {
   text-align: justify;
   font-family: "JetBrains Mono", monospace;
   color: var(--primary-color);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
 }
 
-p:nth-child(even){
+p:nth-child(even) {
   color: var(--tertiary-color);
 }
 
-p.back-link{
+p.back-link {
   text-align: center;
   color: var(--secondary-color);
   margin-top: 50px;
 }
 
-a{
+a {
   text-decoration: none;
   color: var(--primary-color);
 }
 
-a:hover{
+a:hover {
   color: var(--secondary-color);
 }
 
-strong{
+strong {
   color: var(--secondary-color);
 }
 
-i{
+i {
   color: var(--secondary-color);
 }
-

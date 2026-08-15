@@ -1,20 +1,23 @@
 .education-card {
-  background-color: #251229;
-  border: 1px solid rgba(254, 200, 89, 0.15);
-  border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--tertiary-color);
+  border-radius: 25px;
+  padding: 20px;
 }
 
 .education-card h3 {
+  font-size: 2em;
+  color: var(--primary-color);
   margin-top: 0;
-  border-bottom: 2px solid var(--acent-color);
   padding-bottom: 0.5rem;
-  color: var(--secondary-color);
 }
 
 .course-item {
   margin-top: 1.5rem;
+  width: 100%;
 }
 
 .course-item h4 {
@@ -40,7 +43,7 @@
 }
 
 .course-item p {
-  color: #e2d5e5;
+  color: var(--secondary-color);
   line-height: 1.6;
   text-align: justify;
   margin: 0;
