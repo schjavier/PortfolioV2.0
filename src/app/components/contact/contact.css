@@ -13,7 +13,7 @@
 
 .contact-form {
   border: 2px solid var(--tertiary-color);
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   text-align: left;
@@ -82,15 +82,15 @@
 
 .back-link {
   margin-top: 2rem;
-  font-family: monospace;
+  font-family: var(--font), monospace;
 }
 
 .back-link a {
   text-decoration: none;
-  color: var(--link-color, #0066cc);
+  color: var(--primary-color);
   font-weight: bold;
 }
 
 .back-link a:hover {
-  text-decoration: underline;
+  color: var(--secondary-color);
 }
