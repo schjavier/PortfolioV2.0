@@ -1,0 +1,19 @@
+<section class="education-section">
+  <h2>Formación Académica</h2>
+
+  <div class="education-container">
+    @switch (typeKey()) {
+      @case ('bootcamps') {
+        <app-bootcamps />
+      }
+      @case ('tecnicatura') {
+        <app-tecnicatura />
+      }
+      @default {
+        <p>Sección de formación no encontrada.</p>
+      }
+    }
+  </div>
+
+  <p class="back-link"><a routerLink="/home">..:: VOLVER ::..</a></p>
+</section>

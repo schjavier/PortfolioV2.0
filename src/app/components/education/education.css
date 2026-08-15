@@ -1,0 +1,32 @@
+.education-section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.education-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color, #333);
+}
+
+.education-container {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.back-link {
+  margin-top: 2rem;
+  font-family: monospace;
+}
+
+.back-link a {
+  text-decoration: none;
+  color: var(--link-color, #0066cc);
+  font-weight: bold;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
