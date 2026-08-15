@@ -1,0 +1,47 @@
+<section class="contact-section">
+  <h2>Contacto</h2>
+
+  <form (submit)="sendContact($event)" class="contact-form">
+    <div class="form-group">
+      <label for="name">Nombre</label>
+      <input
+        type="text"
+        id="name"
+        [value]="name()"
+        (input)="name.set($any($event.target).value)"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        [value]="email()"
+        (input)="email.set($any($event.target).value)"
+        required
+      />
+      @if (email().length > 0 && !isEmailValid()) {
+        <span class="error-msg">Por favor, introduce un email válido.</span>
+      }
+    </div>
+
+    <div class="form-group">
+      <label for="comment">Mensaje</label>
+      <textarea
+        id="comment"
+        rows="5"
+        [value]="comment()"
+        (input)="comment.set($any($event.target).value)"
+        required
+      ></textarea>
+    </div>
+
+    <button type="submit" [disabled]="!isFormValid()" class="submit-btn">
+      Enviar Mensaje
+    </button>
+  </form>
+
+  <p class="back-link"><a routerLink="/home">..:: VOLVER ::..</a></p>
+</section>

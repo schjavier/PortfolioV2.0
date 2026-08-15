@@ -1,0 +1,97 @@
+.contact-section {
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: var(--secondary-color);
+}
+
+.contact-form {
+  background-color: #251229;
+  border: 1px solid rgba(254, 200, 89, 0.15);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea {
+  background-color: #170b19;
+  border: 1px solid var(--acent-color);
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: #e2d5e5;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(250, 68, 140, 0.2);
+}
+
+.error-msg {
+  color: var(--primary-color);
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background-color: #d63374;
+}
+
+.submit-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.back-link {
+  margin-top: 2rem;
+  font-family: monospace;
+}
+
+.back-link a {
+  text-decoration: none;
+  color: var(--link-color, #0066cc);
+  font-weight: bold;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
