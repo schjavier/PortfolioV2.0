@@ -3,9 +3,7 @@ import {NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'app-emailsender',
-  imports: [
-    NgOptimizedImage
-  ],
+  imports: [],
   templateUrl: './emailsender.html',
   styleUrl: './emailsender.css',
 })

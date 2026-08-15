@@ -1,4 +1,4 @@
-import {Component, Input, input} from '@angular/core';
+import {Component, computed, input} from '@angular/core';
 import {Brotes} from './brotes/brotes';
 import {Emailsender} from './emailsender/emailsender';
 
@@ -14,5 +14,6 @@ import {Emailsender} from './emailsender/emailsender';
 export class ProjectComponent {
 
   projectName = input<string>();
+  projectKey = computed(() => this.projectName()?.toLowerCase());
 
 }
