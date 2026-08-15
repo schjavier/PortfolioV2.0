@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import {NgOptimizedImage} from '@angular/common';
+import { Component, inject } from '@angular/core';
+import { LanguageService } from '../../../services/language.service';
 
 @Component({
   selector: 'app-emailsender',
@@ -8,9 +8,8 @@ import {NgOptimizedImage} from '@angular/common';
   styleUrl: './emailsender.css',
 })
 export class Emailsender {
+  languageService = inject(LanguageService);
+  currentTranslations = this.languageService.currentTranslations;
 
-  projectName: string = 'EmailSender (Microservicio de Notificaciones)'
-  repoBackPath: string = 'https://github.com/schjavier/emailSender';
-
-
+  repoBackPath = 'https://github.com/schjavier/emailSender';
 }

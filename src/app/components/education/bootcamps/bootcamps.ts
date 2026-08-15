@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { LanguageService } from '../../../services/language.service';
 
 @Component({
   selector: 'app-bootcamps',
@@ -6,4 +7,7 @@ import { Component } from '@angular/core';
   templateUrl: './bootcamps.html',
   styleUrl: './bootcamps.css',
 })
-export class BootcampsComponent {}
+export class BootcampsComponent {
+  languageService = inject(LanguageService);
+  currentTranslations = this.languageService.currentTranslations;
+}

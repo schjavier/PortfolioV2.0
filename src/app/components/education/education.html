@@ -1,5 +1,5 @@
 <section class="education-section">
-  <h2>Formación Académica</h2>
+  <h2>{{ currentTranslations().education.title }}</h2>
 
   <div class="education-container">
     @switch (typeKey()) {
@@ -10,10 +10,12 @@
         <app-tecnicatura />
       }
       @default {
-        <p>Sección de formación no encontrada.</p>
+        <p>{{ currentTranslations().education.notFound }}</p>
       }
     }
   </div>
 
-  <p class="back-link"><a routerLink="/home">..:: VOLVER ::..</a></p>
+  <p class="back-link">
+    <a routerLink="/home">{{ currentTranslations().education.backLink }}</a>
+  </p>
 </section>

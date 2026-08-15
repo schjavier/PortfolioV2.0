@@ -1,64 +1,44 @@
 <section class="experience-section">
-  <h2>Experiencia En Desarrollo</h2>
+  <h2>{{ currentTranslations().experience.title }}</h2>
 
   <div class="experience-container">
     <article class="experience-card">
-      <h3>Desarrollador Full Stack Independiente (Freelance)</h3>
-      <span class="project-title">Sistema de Gestión Comercial "Brotes"</span>
-      <span class="date">2023 - Presente (En Producción)</span>
-      <p>
-        Diseño, desarrollo e implementación a medida de un sistema de administración comercial para optimizar la gestión operativa de pedidos y la administración de clientes.
-      </p>
+      <h3>{{ currentTranslations().experience.freelance.role }}</h3>
+      <span class="project-title">{{ currentTranslations().experience.freelance.project }}</span>
+      <span class="date">{{ currentTranslations().experience.freelance.date }}</span>
+      <p>{{ currentTranslations().experience.freelance.description }}</p>
       <ul>
-        <li>
-          <span>Automatización:</span> Diseñé e implementé el flujo automatizado de remitos y comandas, logrando una reducción del 30% en el tiempo de procesamiento administrativo manual del negocio.
-        </li>
-        <li>
-          <span>Calidad y Estabilidad:</span> Desarrollé una suite de pruebas unitarias y de integración utilizando JUnit y Mockito, garantizando el correcto funcionamiento y estabilidad de los flujos críticos del sistema.
-        </li>
-        <li>
-          <span>Mantenimiento en Producción:</span> Administro activamente el ciclo de vida del sistema, implementando mejoras operativas continuas y optimización de bases de datos en MySQL.
-        </li>
+        <li [innerHTML]="currentTranslations().experience.freelance.bullet1"></li>
+        <li [innerHTML]="currentTranslations().experience.freelance.bullet2"></li>
+        <li [innerHTML]="currentTranslations().experience.freelance.bullet3"></li>
       </ul>
     </article>
 
     <article class="experience-card">
-      <h3>Desarrollador Backend (Java / Spring Boot)</h3>
-      <span class="project-title">Diseño de APIs y Microservicios</span>
-      <span class="date">2023 - Presente</span>
-      <p>
-        Desarrollo de arquitecturas backend robustas, escalables y desacopladas para la gestión de datos y lógica de negocios.
-      </p>
+      <h3>{{ currentTranslations().experience.backend.role }}</h3>
+      <span class="project-title">{{ currentTranslations().experience.backend.project }}</span>
+      <span class="date">{{ currentTranslations().experience.backend.date }}</span>
+      <p>{{ currentTranslations().experience.backend.description }}</p>
       <ul>
-        <li>
-          <span>Microservicios y Automatización:</span> Diseñé e implementé el servicio independiente EmailSender utilizando Spring Boot and JavaMailSender para gestionar notificaciones y envíos automatizados de formularios web de forma segura.
-        </li>
-        <li>
-          <span>Diseño de APIs RESTful:</span> Implementación de APIs estructuradas en capas, priorizando el aislamiento de componentes y la gestión segura de variables de entorno.
-        </li>
-        <li>
-          <span>Gestión de Datos:</span> Modelado y normalización de bases de datos relacionales, optimizando consultas para agilizar los tiempos de respuesta de la aplicación.
-        </li>
+        <li [innerHTML]="currentTranslations().experience.backend.bullet1"></li>
+        <li [innerHTML]="currentTranslations().experience.backend.bullet2"></li>
+        <li [innerHTML]="currentTranslations().experience.backend.bullet3"></li>
       </ul>
     </article>
 
     <article class="experience-card">
-      <h3>Desarrollador Frontend & Sitios Web</h3>
-      <span class="project-title">Interfaces de Alto Rendimiento (Astro / Angular)</span>
-      <span class="date">2023 - Presente</span>
-      <p>
-        Maquetación y desarrollo de sitios web veloces, optimizados y orientados a brindar la mejor experiencia de usuario.
-      </p>
+      <h3>{{ currentTranslations().experience.frontend.role }}</h3>
+      <span class="project-title">{{ currentTranslations().experience.frontend.project }}</span>
+      <span class="date">{{ currentTranslations().experience.frontend.date }}</span>
+      <p>{{ currentTranslations().experience.frontend.description }}</p>
       <ul>
-        <li>
-          <span>Rendimiento con Astro:</span> Creación de landing pages y sitios web altamente optimizados para SEO utilizando Astro, garantizando tiempos de carga mínimos y una excelente accesibilidad web.
-        </li>
-        <li>
-          <span>Interfaces Reactivas con Angular:</span> Desarrollo de componentes interactivos standalone empleando Angular, priorizando la reactividad fluida mediante Signals para el manejo eficiente de estados.
-        </li>
+        <li [innerHTML]="currentTranslations().experience.frontend.bullet1"></li>
+        <li [innerHTML]="currentTranslations().experience.frontend.bullet2"></li>
       </ul>
     </article>
   </div>
 
-  <p class="back-link"><a routerLink="/home">..:: VOLVER ::..</a></p>
+  <p class="back-link">
+    <a routerLink="/home">{{ currentTranslations().experience.backLink }}</a>
+  </p>
 </section>

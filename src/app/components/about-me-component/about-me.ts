@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
-import {NgOptimizedImage} from '@angular/common';
-import {RouterLink} from '@angular/router';
+import { Component, inject } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
+import { RouterLink } from '@angular/router';
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-about-me',
@@ -12,7 +13,7 @@ import {RouterLink} from '@angular/router';
   styleUrl: './about-me.css',
 })
 export class AboutMe {
-
-  imgPath: string = "perfil.webp";
-
+  languageService = inject(LanguageService);
+  currentTranslations = this.languageService.currentTranslations;
+  imgPath = 'perfil.webp';
 }
