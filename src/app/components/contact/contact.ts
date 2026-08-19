@@ -1,6 +1,7 @@
 import { Component, computed, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { LanguageService } from '../../services/language.service';
+import {SendMail} from '../../services/send-mail';
 
 @Component({
   selector: 'app-contact',
@@ -11,6 +12,8 @@ import { LanguageService } from '../../services/language.service';
 export class ContactComponent {
   languageService = inject(LanguageService);
   currentTranslations = this.languageService.currentTranslations;
+
+  sendMailService = inject(SendMail);
 
   name = signal('');
   email = signal('');
@@ -32,12 +35,25 @@ export class ContactComponent {
   sendContact(event: Event) {
     event.preventDefault();
     if (this.isFormValid()) {
-      const contactData = {
+      const contactRequest = {
         name: this.name(),
         email: this.email(),
-        comment: this.comment(),
+        subject: "Contacto",
+        text: this.comment(),
       };
-      console.log(contactData);
+
+      this.sendMailService.sendMail(contactRequest).subscribe({
+        next: () => {
+          console.log("Mensaje Enviado");
+          this.name.set('');
+          this.email.set('');
+          this.comment.set('');
+
+        }, error: (err) => {
+          console.log("Ups! algo salio mal: " + err.message);
+        }
+      })
+
     }
   }
 }
