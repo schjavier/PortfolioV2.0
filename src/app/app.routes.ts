@@ -13,17 +13,17 @@ export const routes: Routes = [
     component: AboutMe
   },
   {
-    path: 'bootcamps',
+    path: 'education/bootcamps',
     component: EducationComponent,
     data: { educationType: 'bootcamps' }
   },
   {
-    path: 'tecnicatura',
+    path: 'education/tecnicatura',
     component: EducationComponent,
     data: { educationType: 'tecnicatura' }
   },
   {
-    path: 'contacto',
+    path: 'contact',
     component: ContactComponent
   },
   {
@@ -31,7 +31,7 @@ export const routes: Routes = [
     component: ExperienceComponent
   },
   {
-    path: ':projectName',
+    path: 'projects/:projectName',
     component: ProjectComponent
   },
   {
@@ -44,13 +44,6 @@ export const routes: Routes = [
   },
   {
     path:"**",
-    pathMatch:'prefix',
-    component: Home
-  },
-  {
-    path:"",
-    pathMatch:'prefix',
-    component: Home
-  },
-
+    redirectTo:''
+  }
 ];
