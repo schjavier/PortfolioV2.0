@@ -1,11 +1,13 @@
 import { Component, inject } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 import { LanguageService } from '../../../services/language.service';
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-brotes',
   imports: [
-    NgOptimizedImage
+    NgOptimizedImage,
+    RouterLink
   ],
   templateUrl: './brotes.html',
   styleUrl: './brotes.css',

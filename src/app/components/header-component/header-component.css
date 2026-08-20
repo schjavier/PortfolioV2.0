@@ -15,12 +15,11 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
   flex-direction: row;
   gap: 1rem;
 }
 
-h1 {
+h1>a.title {
   font-family: var(--font), monospace;
   color: var(--tertiary-color);
   font-size: 2rem;
@@ -61,4 +60,15 @@ a {
   color: var(--secondary-color);
   font-family: var(--font), monospace;
   cursor: pointer;
+}
+
+@media (max-width: 530px){
+
+  h1>a.title {
+    font-size: 1.5rem;
+  }
+
+  small{
+    font-size: 1rem;
+  }
 }
