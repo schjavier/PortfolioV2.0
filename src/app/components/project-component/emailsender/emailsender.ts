@@ -1,9 +1,12 @@
 import { Component, inject } from '@angular/core';
 import { LanguageService } from '../../../services/language.service';
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-emailsender',
-  imports: [],
+    imports: [
+        RouterLink
+    ],
   templateUrl: './emailsender.html',
   styleUrl: './emailsender.css',
 })

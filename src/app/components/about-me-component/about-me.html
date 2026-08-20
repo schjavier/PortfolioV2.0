@@ -1,7 +1,8 @@
 <section class="about-me-section">
+  <h3>{{ currentTranslations().aboutMe.title }}</h3>
+
   <img [ngSrc]="imgPath" alt="profile img" width="300" height="300" priority>
 
-  <h3>{{ currentTranslations().aboutMe.title }}</h3>
   <p [innerHTML]="currentTranslations().aboutMe.p1"></p>
   <p [innerHTML]="currentTranslations().aboutMe.p2"></p>
   <p [innerHTML]="currentTranslations().aboutMe.p3"></p>
@@ -9,6 +10,6 @@
   <p [innerHTML]="currentTranslations().aboutMe.p5"></p>
   <p [innerHTML]="currentTranslations().aboutMe.p6"></p>
   <p class="back-link">
-    <a routerLink="/home">{{ currentTranslations().aboutMe.backLink }}</a>
+    <a routerLink="">{{ currentTranslations().aboutMe.backLink }}</a>
   </p>
 </section>

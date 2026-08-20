@@ -7,6 +7,33 @@ import {ContactComponent} from './components/contact/contact';
 import {ExperienceComponent} from './components/experience/experience';
 
 export const routes: Routes = [
+
+  {
+    path: 'aboutme',
+    component: AboutMe
+  },
+  {
+    path: 'bootcamps',
+    component: EducationComponent,
+    data: { educationType: 'bootcamps' }
+  },
+  {
+    path: 'tecnicatura',
+    component: EducationComponent,
+    data: { educationType: 'tecnicatura' }
+  },
+  {
+    path: 'contacto',
+    component: ContactComponent
+  },
+  {
+    path: 'experience',
+    component: ExperienceComponent
+  },
+  {
+    path: ':projectName',
+    component: ProjectComponent
+  },
   {
     path: '',
     component: Home
@@ -16,29 +43,14 @@ export const routes: Routes = [
     component: Home
   },
   {
-    path: 'AboutMe',
-    component: AboutMe
+    path:"**",
+    pathMatch:'prefix',
+    component: Home
   },
   {
-    path: 'Bootcamps',
-    component: EducationComponent,
-    data: { educationType: 'bootcamps' }
+    path:"",
+    pathMatch:'prefix',
+    component: Home
   },
-  {
-    path: 'Tecnicatura',
-    component: EducationComponent,
-    data: { educationType: 'tecnicatura' }
-  },
-  {
-    path: 'Contacto',
-    component: ContactComponent
-  },
-  {
-    path: 'FullStack Developer',
-    component: ExperienceComponent
-  },
-  {
-    path: ':projectName',
-    component: ProjectComponent
-  }
+
 ];
