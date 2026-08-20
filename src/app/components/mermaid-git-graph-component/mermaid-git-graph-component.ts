@@ -65,13 +65,13 @@ export class MermaidGitGraphComponent implements AfterViewInit {
 
   private handleCommitClick(commitLabel: string) {
     const routeMapping: Record<string, string> = {
-      'Contacto': 'contacto',
-      'Contact': 'contacto',
-      'Tecnicatura': 'tecnicatura',
-      'Degree': 'tecnicatura',
-      'Bootcamps': 'bootcamps',
-      'Brotes': 'Brotes',
-      'EmailSender': 'EmailSender',
+      'Contacto': 'contact',
+      'Contact': 'contact',
+      'Tecnicatura': 'education/tecnicatura',
+      'Degree': 'education/tecnicatura',
+      'Bootcamps': 'education/bootcamps',
+      'Brotes': 'projects/brotes',
+      'EmailSender': 'projects/emailsender',
       'AboutMe': 'aboutme',
       'FullStack Developer': 'experience'
     };
