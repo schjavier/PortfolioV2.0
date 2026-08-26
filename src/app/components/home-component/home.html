@@ -1,4 +1,13 @@
 <section class="home">
-  <h3>{{ currentTranslations().home.welcomeMessage }}</h3>
-  <app-mermaid-git-graph-component></app-mermaid-git-graph-component>
+
+  @if (isCompleted()){
+    <h3>{{ currentTranslations().home.welcomeMessage }}</h3>
+    <app-mermaid-git-graph-component></app-mermaid-git-graph-component>
+
+  } @else {
+
+    <app-tutorial (tutorialCompleted)="isCompleted.set(true)"></app-tutorial>
+
+  }
+
 </section>
