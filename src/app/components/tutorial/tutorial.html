@@ -1,0 +1,7 @@
+<div class="tutorial-container">
+  <h3>{{ currentTranslations().home.welcomeMessage }}</h3>
+
+  <video #videoPlayer src="/portfolio.webm" [muted]="true" autoplay loop playsinline></video>
+
+  <button class="skip-button" (click)="skipTutorial()">{{ currentTranslations().tutorial.button }}</button>
+</div>

@@ -4,6 +4,9 @@ export const translationsDictionary = {
       downloadCv: 'Descargar CV',
       cvFile: '/JavierSchettini-Es.pdf'
     },
+    tutorial:{
+      button : `Saltar`
+    },
     home: {
       welcomeMessage: '¡Bienvenido a mi portafolio! Clickea en las etiquetas de los commits para ir a la sección correspondiente.'
     },
@@ -100,6 +103,9 @@ export const translationsDictionary = {
     header: {
       downloadCv: 'Download CV',
       cvFile: '/JavierSchettini-En.pdf'
+    },
+    tutorial:{
+      button : `Skip`
     },
     home: {
       welcomeMessage: 'Welcome to my portfolio! Click on the commit tags to navigate to the corresponding section.'
